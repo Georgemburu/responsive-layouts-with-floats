@@ -1,0 +1,124 @@
+html,body {
+    height: 100vh;
+}
+
+header,.main,.body,footer {
+    background-color: aquamarine;
+    margin-bottom: 2% ;
+    width: 78%;
+    margin: 2% auto;
+    padding: 2%;
+}
+/* HEADER */
+header .logo {
+    float: left;
+    width: 20%;
+    background-color: #d1cbcb;
+    padding: 2%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px solid black;
+    
+}
+header .nav {
+    float: right;
+    width: 65%;
+    background-color: #e0e0e0;
+    padding: 2%;
+    border: 1px solid black;
+
+}
+header .nav a {
+    margin: 0 2%;
+}
+header::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+/* SECTION MAIN */
+.main > section {
+    float: left;
+    width: 55%;
+    background-color: #e0e0e0;
+    padding: 2%;
+    border: 1px solid black;
+}
+.main > aside {
+    float: right;
+    width: 35%;
+    background-color: #e0e0e0;
+    padding: 2%;
+    border: 1px solid black;
+}
+.main::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+/* SECTION BODY */
+.body {
+    text-align: center;
+}
+.body >section {
+    float: left;
+    background-color: #e0e0e0;
+    border: 1px solid black;
+    float: left;
+    width: 27%;
+    padding: 2%;
+    margin-right:2%;
+   
+
+}
+
+.body::after {
+    display: table;
+    content: '';
+    clear: both;
+
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    
+}
+
+
+/* MEDIA QUERY */
+@media  (max-width: 900px){
+    header .logo {
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    }
+    header .nav {
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+
+    }
+   header {
+       padding: 1%;
+
+   }
+   .main section {
+       float: none;
+       width: 90%;
+       margin: 2% auto;
+   }
+   .main aside {
+    float: none;
+    width: 90%;
+    margin: 2% auto;
+   }
+   .body section {
+    float: none;
+    width: 90%;
+    margin: 2% auto;
+   }
+}
